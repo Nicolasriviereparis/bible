@@ -19,15 +19,24 @@ blockquote {
   color:#1b1b42;
 }
 
-
 body {
   -epub-hyphens: auto;
   background-color: #fffde9;
-  padding: 10vmin;
+  padding: 0 8vmin 50vh 8vmin;
 }
 main {
   max-width: 640px;
   margin: auto;
+}
+a, a:hover{
+  color:#1b1b42;
+}
+a:visited{
+  color:#421b20;
+}
+#sommaire li{
+  display: inline-block;
+  margin:3px 0;
 }
 .content {
   display: grid;
@@ -52,8 +61,10 @@ ol li {
 }
 .mode{
   position: fixed;
-  top:10px;
-  right:10px;
+  top: 15px;
+  right: 3px;
+  width: 20px;
+  height: 20px;
 }
 #mode_label{
   position: absolute;
@@ -76,7 +87,6 @@ ol li {
   padding-left:30px;
 }
 
-
 ol li:before {
   content: counter(verset);
   margin-right:3px;
@@ -90,8 +100,11 @@ ol {
   padding: 0;
   margin:0
 }
+.chapitre{
+  position: relative;
+  padding-top:20px;
+}
 .chapitre_count{
-  text-align: right;
 	display: inline-block;
 	margin-left:-30px;
 	position: sticky;
@@ -116,7 +129,6 @@ ol {
   color: #bbb9a2;
   font-size: 0.8rem;
 }
-
 .d-none{
   display: none;
 }

@@ -10,7 +10,7 @@ importScripts(
   // const {StaleWhileRevalidate} = workbox.strategies;
   // const {NetworkFirst} = workbox.strategies;
   const { CacheFirst } = workbox.strategies;
-  const { NetworkOnly } = workbox.strategies;
+  // const { NetworkOnly } = workbox.strategies;
   // const {CacheOnly} = workbox.strategies;
   const { CacheableResponse } = workbox.cacheableResponse;
   const { precacheAndRoute } = workbox.precaching;
@@ -40,7 +40,7 @@ importScripts(
   
   registerRoute(new RegExp('.+\\.webmanifest'), manifestHandler);
   
-  registerRoute(new RegExp('.+\\.css$'), docHandler);
+  // registerRoute(new RegExp('.+\\.css$'), docHandler);
   
   registerRoute(new RegExp('.+\\.css$'), cssHandler);
   
