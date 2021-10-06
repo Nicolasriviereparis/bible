@@ -104,11 +104,16 @@ ol {
   position: relative;
   padding-top:20px;
 }
+.text_name{
+  background-color:#fffde9;
+}
+.sticky{
+  position: sticky;
+	top:20px;
+}
 .chapitre_count{
 	display: inline-block;
 	margin-left:-30px;
-	position: sticky;
-	top:20px;
 	background-color:#1b1b42;
 	color:#fffde9;
 	font-size: .85rem;
