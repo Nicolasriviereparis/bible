@@ -7,7 +7,7 @@ importScripts(
   });
   
   const { registerRoute } = workbox.routing;
-  // const {StaleWhileRevalidate} = workbox.strategies;
+  const {StaleWhileRevalidate} = workbox.strategies;
   // const {NetworkFirst} = workbox.strategies;
   const { CacheFirst } = workbox.strategies;
   // const { NetworkOnly } = workbox.strategies;
@@ -34,7 +34,7 @@ importScripts(
   
   const manifestHandler = new CacheFirst();
   const docHandler = new CacheFirst();
-  const cssHandler = new CacheFirst();
+  const cssHandler = new StaleWhileRevalidate();
   const jsHandler = new CacheFirst();
   const jsonHandler = new CacheFirst();
   
